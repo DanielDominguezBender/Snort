@@ -46,7 +46,7 @@ Snort's strength lies in its ability to quickly and efficiently analyze a massiv
 
 ## Let's see an example
 
-I installed SNORT on a Ubuntu machine.
+I installed SNORT on a Virtual Machine using a Ubuntu Distribution.
 
 1) Necessary libraries:
 
