@@ -43,3 +43,24 @@ Snort works by analyzing network traffic in real-time to detect suspicious or ma
 A simple analogy on how SNORT works would be: imagine Snort as a security guard at a gate (your network). The guard has a list of known troublemakers (the rules), and they check everyone's belongings (network packets) as they enter. If they find anything suspicious (a match with the rules), they sound an alarm (generate an alert) or even block the troublemaker from entering (Intrusion Prevention).
 
 Snort's strength lies in its ability to quickly and efficiently analyze a massive amount of network data, helping organizations identify and respond to potential security threats in real-time.
+
+## Let's see an example
+
+I installed SNORT on a Ubuntu machine.
+
+1) Necessary libraries:
+
+![snort2.jpg](imgs/snort2.jpg)
+
+```
+sudo apt install -y gcc libpcre3-dev zlib1g-dev libluajit-5.1-dev libpcap-dev openssl libssl-dev libnghttp2-dev libdumbnet-dev
+bison flex libdnet autoconf libtool
+```
+Once done this, I proceed to install <b>SNORT</b> on a temporary direcotry under the HOME folder.
+
+![snort3.jpg](imgs/snort3.jpg)
+
+2) Installing DAQ:
+   
+Snort uses something called DAQ to make abstract calls to packet capture libraries. To install DAQ I proceed with what is explained on this website 
+
