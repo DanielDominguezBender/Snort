@@ -1,8 +1,8 @@
 # Snort
 
-## What is SNORT?  
-
 ![snort1.jpg](imgs/snort1.jpg)
+
+## What is SNORT?  
 
 In simple words, SNORT is like a digital security guard for computer networks. Imagine it as a superhero that watches over your network, looking for bad guys trying to break in or cause trouble.
 
@@ -22,4 +22,24 @@ Updates: Snort isn't static. It's regularly updated with new rules to recognize 
 
 Use Cases: Snort is used in all sorts of places, from big companies to small homes. It helps protect networks from cyberattacks, like viruses and hackers, and ensures that digital information stays safe.
 
-## 
+## How does SNORT work?  
+
+Snort works by analyzing network traffic in real-time to detect suspicious or malicious activity. Here's a simplified explanation of how it works:
+
+- Packet Capture: Snort starts by capturing network packets. Think of these packets as small pieces of data that travel over the internet, like letters in the mail.
+
+- Preprocessing: Before analyzing packets, Snort might preprocess them. This means cleaning them up and preparing them for inspection.
+
+- Rule Matching: Snort uses a set of rules, also known as signatures, to identify known patterns of malicious activity. These rules describe what specific threats look like. For example, a rule might say, "If a packet contains the word 'virus,' consider it suspicious."
+
+- Packet Analysis: Snort examines each packet and compares its contents to the rules. If it finds a match, it triggers an alert. It's like Snort's way of saying, "Hey, I found something strange here!"
+
+- Logging and Alerting: When Snort detects a suspicious packet, it can log information about it and generate an alert. This alert can be sent to a security administrator or a monitoring system.
+
+- Decision and Action (optional): Depending on how Snort is configured, it can take actions beyond just alerting. For example, it can block the suspicious traffic to prevent it from causing harm. This is known as Intrusion Prevention.
+
+- Continual Monitoring: Snort keeps monitoring network traffic continuously, so it's always on the lookout for potential threats.
+
+A simple analogy on how SNORT works would be: imagine Snort as a security guard at a gate (your network). The guard has a list of known troublemakers (the rules), and they check everyone's belongings (network packets) as they enter. If they find anything suspicious (a match with the rules), they sound an alarm (generate an alert) or even block the troublemaker from entering (Intrusion Prevention).
+
+Snort's strength lies in its ability to quickly and efficiently analyze a massive amount of network data, helping organizations identify and respond to potential security threats in real-time.
