@@ -56,7 +56,7 @@ I installed SNORT on a Virtual Machine using a Ubuntu Distribution.
 sudo apt install -y gcc libpcre3-dev zlib1g-dev libluajit-5.1-dev libpcap-dev openssl libssl-dev libnghttp2-dev libdumbnet-dev
 bison flex libdnet autoconf libtool
 ```
-Once done this, I proceed to install <b>SNORT</b> on a temporary direcotry under the HOME folder.
+Once done this, I proceed to install <b>SNORT</b> in a temporary directory under the HOME folder.
 
 ![snort3.png](imgs/snort3.png)
 
