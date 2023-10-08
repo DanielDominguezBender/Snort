@@ -50,7 +50,7 @@ I installed SNORT on a Ubuntu machine.
 
 1) Necessary libraries:
 
-![snort2.jpg](imgs/snort2.jpg)
+![snort2.png](imgs/snort2.png)
 
 ```
 sudo apt install -y gcc libpcre3-dev zlib1g-dev libluajit-5.1-dev libpcap-dev openssl libssl-dev libnghttp2-dev libdumbnet-dev
@@ -58,7 +58,7 @@ bison flex libdnet autoconf libtool
 ```
 Once done this, I proceed to install <b>SNORT</b> on a temporary direcotry under the HOME folder.
 
-![snort3.jpg](imgs/snort3.jpg)
+![snort3.png](imgs/snort3.png)
 
 2) Installing DAQ:
    
