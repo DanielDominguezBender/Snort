@@ -62,5 +62,29 @@ Once done this, I proceed to install <b>SNORT</b> in a temporary directory under
 
 2) Installing DAQ:
    
-Snort uses something called DAQ to make abstract calls to packet capture libraries. To install DAQ I proceed with what is explained on this website 
+Snort uses something called DAQ to make abstract calls to packet capture libraries. To install DAQ I followed the steps explained on [UPCLOUD](https://upcloud.com/resources/tutorials/installing-snort-on-debian).  
+
+![snort4.png](imgs/snort4.png)
+
+- Unzip and enter the downloaded folder:
+```
+tar -xvzf daq-2.0.7.tar.gz
+cd daq-2.0.7
+```
+- Run the autoreconf command (it gave me an error as I had it not installed). Installed it with:
+```
+sudo apt-get install autoconf
+```
+- Configure script and compile the program with: 
+```
+$ ./configure && make && sudo
+make install
+```
+3) Installing snort:
+
+Installing snort from source:
+```
+$wget https://www.snort.org/downloads/snort/snort-
+2.9.20.tar.gz
+```
 
