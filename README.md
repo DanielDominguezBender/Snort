@@ -113,3 +113,48 @@ It is !! :sunglasses:
 Now let's config some rules!! 😄
 
 In this case a simple one which will detect a PING from the host to the virtual machine I have as a lab environment.
+These are the steps I followed:
+
+1) Update libraries
+2) Create a symbolic link
+3) Create a group and user for snort
+4) Create a folder structure under which I saved the snort rules
+
+![snort7.png](imgs/snort7.png)
+
+Provide the correct permissions to the folder structure:
+
+![snort8.png](imgs/snort8.png)
+
+Change owner:
+
+![snort9.png](imgs/snort9.png)
+
+For future rules I've created 3 separate rule files.
+
+Whitelisting:
+![snort10.png](imgs/snort10.png)
+
+Blacklisting:
+![snort11.png](imgs/snort11.png)
+
+Local:
+![snort12.png](imgs/snort12.png)
+
+Copy the configuration to the folders previously downloaded:
+![snort13.png](imgs/snort13.png)
+
+Now let's download the detection rules. They can be <i>community rules</i> or <i>registered user rules</i>. I chosed the <i>community rules</i>.
+![snort14.png](imgs/snort14.png)
+
+Extract the rules:
+![snort15.png](imgs/snort15.png)
+
+Once all this is done, now I can proceed to create the rule for the PING detection.
+
+In the config folder I have to protect the network address from the Linux machine.
+![snort16.png](imgs/snort16.png)
+
+In here I changed the variable <b>any</b> to the IP of the machine: 172.18.72.15.
+In this case I allowed the subnet /16 as well.
+![snort17.png](imgs/snort17.png)
