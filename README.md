@@ -138,7 +138,7 @@ Whitelisting:<br>
 Blacklisting:<br>
 ![snort11.png](imgs/snort11.png)
 
-Local:<<br>
+Local:<br>
 ![snort12.png](imgs/snort12.png)
 
 Copy the configuration to the folders previously downloaded:
@@ -158,3 +158,28 @@ In the config folder I have to protect the network address from the Linux machin
 In here I changed the variable <b>any</b> to the IP of the machine: 172.18.72.15.
 In this case I allowed the subnet /16 as well.
 ![snort17.png](imgs/snort17.png)
+
+Allowing all external traffic:
+![snort18.png](imgs/snort18.png)
+
+Update the path to the rules:
+![snort19.png](imgs/snort19.png)
+
+Update the paths:
+![snort20.png](imgs/snort20.png)
+
+Config the LOGS for Snort (with a limit of 256):
+![snort21.png](imgs/snort21.png)
+
+In order to apply the rules, I have to decomment the line:
+```
+# site specific rules
+```
+![snort22.png](imgs/snort22.png)
+
+And as last step validate the changes done so far:
+```
+sudo snort -T -c /etc/snort/snort.conf
+```
+![snort23.png](imgs/snort23.png)
+
