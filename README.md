@@ -132,13 +132,13 @@ Change owner:
 
 For future rules I've created 3 separate rule files.
 
-Whitelisting:
+Whitelisting:<br>
 ![snort10.png](imgs/snort10.png)
 
-Blacklisting:
+Blacklisting:<br>
 ![snort11.png](imgs/snort11.png)
 
-Local:
+Local:<<br>
 ![snort12.png](imgs/snort12.png)
 
 Copy the configuration to the folders previously downloaded:
