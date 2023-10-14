@@ -84,7 +84,32 @@ make install
 
 Installing snort from source:
 ```
-$wget https://www.snort.org/downloads/snort/snort-
-2.9.20.tar.gz
+$ wget https://www.snort.org/downloads/snort/snort-2.9.20.tar.gz
+```
+Extract and enter the new directory:
+
+```
+tar -xvzf snort-2.9.16.tar.gz
+cd snort-2.9.16
 ```
 
+Set up the instalation:
+
+```
+$ ./configure --enable-sourcefire && make && sudo make install
+```
+![snort5.png](imgs/snort5.png)
+
+Let's check if all was installed correctly:
+
+```
+snort --version
+```
+
+![snort6.png](imgs/snort6.png)
+
+It is !! :sunglasses:
+
+Now let's config some rules!! 😄
+
+In this case a simple one which will detect a PING from the host to the virtual machine I have as a lab environment.
