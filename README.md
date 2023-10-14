@@ -183,3 +183,19 @@ sudo snort -T -c /etc/snort/snort.conf
 ```
 ![snort23.png](imgs/snort23.png)
 
+Now I apply the snort rule for the PING command under the LOCAL RULE file:
+![snort24.png](imgs/snort24.png)
+
+The message that should be visible when the snort rule detects a ping is "uoc-ping".
+
+And activate the port listening with the following command:
+```
+$ sudo snort -A console -q -c /etc/snort/snort.conf -i enp0s3
+```
+Now let's see if all this work was for nothing or not ... :cold_sweat:
+I make a ping attempt form the Windows machine to the Linux (under which I have installed Snort):
+![snort24.png](imgs/snort24.png)
+
+It's clearly visible that the snort rule that I implementes is working
+
+
